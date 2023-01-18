@@ -3,10 +3,14 @@
 App that allows you to use Ultralight remote inspector easily. Sample project for MSVC/Visual Studio on Windows.
 
 You fire it up and see this:
+
 ![Main window](https://user-images.githubusercontent.com/5182588/213102835-f92ff279-56ed-436f-acb1-7a7f288a8cc3.png)
 
 Just enter your client's address and click Connect. Once you're connected, you will see a list of inspectable targets:
+
 ![After connection](https://user-images.githubusercontent.com/5182588/213103045-134f50b6-e474-43db-9c23-59cb7acf14fd.png)
+
+Clicking "Inspect" opens up the actual inspector:
 
 ![Inspector itself](https://user-images.githubusercontent.com/5182588/213103755-1fb4e7bd-6b25-4880-ac56-5c960374e852.png)
 
@@ -38,3 +42,5 @@ renderer_->StartRemoteInspectorServer("127.0.0.1", 19998);
 * Closing the windows in the wrong order will cause a crash.
 
 * Hovering over HTML elements does not hover them in the actual app like a normal browser would do.
+
+* The bundled inspector does not display some SVG icons due to a Safari bug that was already fixed somewhere in 2020, so will be fixed in Ultralight v1.4 automatically.
